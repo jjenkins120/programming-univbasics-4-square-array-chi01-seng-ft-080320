@@ -1,9 +1,9 @@
 numbers = [1,2,3]
-new_numbers = [9, 10, 16, 25]
+new_numbers = []
 
 def square_array(numbers)
-  counter = 0 
-  while array[counter] do
-  puts array[counter]
-  counter **= 1
+  numbers.length.times do |index|
+    new_numbers.push(numbers[index] **= numbers)
+  end
+  new_numbers
 end
